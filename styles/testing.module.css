@@ -1,13 +1,24 @@
 .testing {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin: 10px;
-    padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 10px;
+  padding: 10px;
 }
 
 .p {
-    padding: 15px;
-    color: red;
-    margin: 25px;
+  padding: 15px;
+  color: red;
+  margin: 25px;
+}
+.productContainer {
+  display: flex;
+  flex-direction: "column";
+  justify-content: "center";
+  align-items: "center";
+  overflow: "hidden";
+}
+
+.productContainer:hover {
+  cursor: pointer;
 }

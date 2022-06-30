@@ -1,5 +1,8 @@
 import { useState } from "react";
 import Custom_Grid from "../comps/custom_grid";
+import { TextField, InputAdornment, IconButton } from "@mui/material";
+import SearchIcon from "@mui/icons-material/Search";
+import ClearIcon from "@mui/icons-material/Clear";
 
 const a = [
   {
@@ -79,20 +82,49 @@ const a = [
 export default function name() {
   const [data, setData] = useState(a);
   const changeInput = (e) => {
-    console.log(e, e.target.value);
     const newData = a.filter((data) =>
       data.item.toLowerCase().includes(e.target.value.toLowerCase())
     );
     setData(newData);
   };
   return (
-    <div>
-      <label htmlFor="test">Type Something: </label>
-      <input type="text" id="test" onChange={changeInput} />
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+        alignItem: "center",
+      }}
+    >
+      <TextField
+        type="search"
+        id="test"
+        // label="Type Something"
+        placeholder="Type Something"
+        variant="outlined"
+        size="small"
+        onChange={changeInput}
+        style={{ margin: "10px", maxWidth: "300px" }}
+        InputProps={{
+          // endAdornment: (
+          //   <InputAdornment position="end">
+          //     <IconButton edge="end" onClick={() => ()}>
+          //       <ClearIcon />
+          //     </IconButton>
+          //   </InputAdornment>
+          // ),
+          startAdornment: (
+            <InputAdornment position="start">
+              <IconButton edge="start">
+                <SearchIcon />
+              </IconButton>
+            </InputAdornment>
+          ),
+        }}
+      />
+      <br />
+      <br />
+
       <Custom_Grid route="model" data={data} />
     </div>
   );
