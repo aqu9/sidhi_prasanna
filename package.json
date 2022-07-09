@@ -7,7 +7,8 @@
     "build": "next build --legacy-peer-deps",
     "start": "next start",
     "lint": "next lint",
-    "deploy": "npm install --legacy-peer-deps && next build"
+    "deploy": "npm install --legacy-peer-deps && next build",
+    "export": "next build && next export"
   },
   "dependencies": {
     "@emotion/cache": "^11.9.3",
