@@ -1,352 +1,530 @@
-a = [{
-    Dress_Material: {
-      sidebar: [
-        {
-          StyleType44: ["Straight", "A-line", "Flared", "Anarkali", "Angrakha"],
-        },
-        {
-          Sleeve: [
-            "3/4th sleeve",
-            "3/4th",
-            "Sleeveless",
-            "Short",
-            "Full-length",
-          ],
-        },
-        { Pattern: ["Floral", "Embroidery", "Solid", "Indian", "Geometric"] },
-        { Neckline: ["Round", "Collar", "V", "Boat", "Stylised"] },
-        { Character: ["Others", "Chutki", "Frozen", "Arrow", "AngryBirds"] },
-        {
-          Traditional_Weave: [
-            "Chanderi",
-            "Bagru",
-            "Handloom",
-            "Bandhej",
-            "Ikat/Pochampally/Patola",
-          ],
-        },
-        { Shape: ["Curve", "Maternity", "Petite", "Regular"] },
-        { Fabric: ["Cotton", "Rayon", "Viscose", "Crepe", "Polyester"] },
+a = [{ Dress_Material: {
+  sidebar: [
+    {
+      label: "StyleType",
+      value: ["Straight", "A-line", "Flared", "Anarkali", "Angrakha"],
+    },
+    {
+      label: "Sleeve",
+      value: [
+        "3/4th sleeve",
+        "3/4th",
+        "Sleeveless",
+        "Short",
+        "Full-length",
       ],
     },
-  },
-  {
-    "Salwars and Churidars": {
-      sidebar: [
-        {
-          StyleType76: ["Straight", "A-line", "Flared", "Anarkali", "Angrakha"],
-        },
-        {
-          Sleeve: [
-            "3/4th sleeve",
-            "3/4th",
-            "Sleeveless",
-            "Short",
-            "Full-length",
-          ],
-        },
-        { Pattern: ["Floral", "Embroidery", "Solid", "Indian", "Geometric"] },
-        { Neckline: ["Round", "Collar", "V", "Boat", "Stylised"] },
-        { Character: ["Others", "Chutki", "Frozen", "Arrow", "AngryBirds"] },
-        {
-          Traditional_Weave: [
-            "Chanderi",
-            "Bagru",
-            "Handloom",
-            "Bandhej",
-            "Ikat/Pochampally/Patola",
-          ],
-        },
-        { Shape: ["Curve", "Maternity", "Petite", "Regular"] },
-        { Fabric: ["Cotton", "Rayon", "Viscose", "Crepe", "Polyester"] },
+    {
+      label: "Pattern",
+      value: ["Floral", "Embroidery", "Solid", "Indian", "Geometric"],
+    },
+    {
+      label: "Neckline",
+      value: ["Round", "Collar", "V", "Boat", "Stylised"],
+    },
+    {
+      label: "Character",
+      value: ["Others", "Chutki", "Frozen", "Arrow", "AngryBirds"],
+    },
+    {
+      label: "Traditional_Weave",
+      value: [
+        "Chanderi",
+        "Bagru",
+        "Handloom",
+        "Bandhej",
+        "Ikat/Pochampally/Patola",
       ],
     },
-  },
-  {
-    "Kurtis and Tunics": {
-      sidebar: [
-        {
-          StyleType108: ["Straight", "A-line", "Flared", "Anarkali", "Angrakha"],
-        },
-        {
-          Sleeve: [
-            "3/4th sleeve",
-            "3/4th",
-            "Sleeveless",
-            "Short",
-            "Full-length",
-          ],
-        },
-        { Pattern: ["Floral", "Embroidery", "Solid", "Indian", "Geometric"] },
-        { Neckline: ["Round", "Collar", "V", "Boat", "Stylised"] },
-        { Character: ["Others", "Chutki", "Frozen", "Arrow", "AngryBirds"] },
-        {
-          Traditional_Weave: [
-            "Chanderi",
-            "Bagru",
-            "Handloom",
-            "Bandhej",
-            "Ikat/Pochampally/Patola",
-          ],
-        },
-        { Shape: ["Curve", "Maternity", "Petite", "Regular"] },
-        { Fabric: ["Cotton", "Rayon", "Viscose", "Crepe", "Polyester"] },
+    {
+      label: "Shape",
+      value: ["Curve", "Maternity", "Petite", "Regular"],
+    },
+    {
+      label: "Fabric",
+      value: ["Cotton", "Rayon", "Viscose", "Crepe", "Polyester"],
+    },
+  ],
+},
+"Salwars and Churidars": {
+  sidebar: [
+    {
+      label: "StyleType",
+      value: ["Straight", "A-line", "Flared", "Anarkali", "Angrakha"],
+    },
+    {
+      label: "Sleeve",
+      value: [
+        "3/4th sleeve",
+        "3/4th",
+        "Sleeveless",
+        "Short",
+        "Full-length",
       ],
     },
-  },
-  {
-    Sarees: {
-      sidebar: [
-        {
-          StyleType: ["Straight", "A-line", "Flared", "Anarkali", "Angrakha"],
-        },
-        {
-          Sleeve: [
-            "3/4th sleeve",
-            "3/4th",
-            "Sleeveless",
-            "Short",
-            "Full-length",
-          ],
-        },
-        { Pattern: ["Floral", "Embroidery", "Solid", "Indian", "Geometric"] },
-        { Neckline: ["Round", "Collar", "V", "Boat", "Stylised"] },
-        { Character: ["Others", "Chutki", "Frozen", "Arrow", "AngryBirds"] },
-        {
-          Traditional_Weave: [
-            "Chanderi",
-            "Bagru",
-            "Handloom",
-            "Bandhej",
-            "Ikat/Pochampally/Patola",
-          ],
-        },
-        { Shape: ["Curve", "Maternity", "Petite", "Regular"] },
-        { Fabric: ["Cotton", "Rayon", "Viscose", "Crepe", "Polyester"] },
+    {
+      label: "Pattern",
+      value: ["Floral", "Embroidery", "Solid", "Indian", "Geometric"],
+    },
+    {
+      label: "Neckline",
+      value: ["Round", "Collar", "V", "Boat", "Stylised"],
+    },
+    {
+      label: "Character",
+      value: ["Others", "Chutki", "Frozen", "Arrow", "AngryBirds"],
+    },
+    {
+      label: "Traditional_Weave",
+      value: [
+        "Chanderi",
+        "Bagru",
+        "Handloom",
+        "Bandhej",
+        "Ikat/Pochampally/Patola",
       ],
     },
-  },
-  {
-    Dupattas: {
-      sidebar: [
-        {
-          StyleType: ["Straight", "A-line", "Flared", "Anarkali", "Angrakha"],
-        },
-        {
-          Sleeve: [
-            "3/4th sleeve",
-            "3/4th",
-            "Sleeveless",
-            "Short",
-            "Full-length",
-          ],
-        },
-        { Pattern: ["Floral", "Embroidery", "Solid", "Indian", "Geometric"] },
-        { Neckline: ["Round", "Collar", "V", "Boat", "Stylised"] },
-        { Character: ["Others", "Chutki", "Frozen", "Arrow", "AngryBirds"] },
-        {
-          Traditional_Weave: [
-            "Chanderi",
-            "Bagru",
-            "Handloom",
-            "Bandhej",
-            "Ikat/Pochampally/Patola",
-          ],
-        },
-        { Shape: ["Curve", "Maternity", "Petite", "Regular"] },
-        { Fabric: ["Cotton", "Rayon", "Viscose", "Crepe", "Polyester"] },
+    {
+      label: "Shape",
+      value: ["Curve", "Maternity", "Petite", "Regular"],
+    },
+    {
+      label: "Fabric",
+      value: ["Cotton", "Rayon", "Viscose", "Crepe", "Polyester"],
+    },
+  ],
+},
+
+"Kurtis and Tunics": {
+  sidebar: [
+    {
+      label: "StyleType",
+      value: ["Straight", "A-line", "Flared", "Anarkali", "Angrakha"],
+    },
+    {
+      label: "Sleeve",
+      value: [
+        "3/4th sleeve",
+        "3/4th",
+        "Sleeveless",
+        "Short",
+        "Full-length",
       ],
     },
-  },
-  {
-    "Kurta Suit Sets": {
-      sidebar: [
-        {
-          StyleType: ["Straight", "A-line", "Flared", "Anarkali", "Angrakha"],
-        },
-        {
-          Sleeve: [
-            "3/4th sleeve",
-            "3/4th",
-            "Sleeveless",
-            "Short",
-            "Full-length",
-          ],
-        },
-        { Pattern: ["Floral", "Embroidery", "Solid", "Indian", "Geometric"] },
-        { Neckline: ["Round", "Collar", "V", "Boat", "Stylised"] },
-        { Character: ["Others", "Chutki", "Frozen", "Arrow", "AngryBirds"] },
-        {
-          Traditional_Weave: [
-            "Chanderi",
-            "Bagru",
-            "Handloom",
-            "Bandhej",
-            "Ikat/Pochampally/Patola",
-          ],
-        },
-        { Shape: ["Curve", "Maternity", "Petite", "Regular"] },
-        { Fabric: ["Cotton", "Rayon", "Viscose", "Crepe", "Polyester"] },
+    {
+      label: "Pattern",
+      value: ["Floral", "Embroidery", "Solid", "Indian", "Geometric"],
+    },
+    {
+      label: "Neckline",
+      value: ["Round", "Collar", "V", "Boat", "Stylised"],
+    },
+    {
+      label: "Character",
+      value: ["Others", "Chutki", "Frozen", "Arrow", "AngryBirds"],
+    },
+    {
+      label: "Traditional_Weave",
+      value: [
+        "Chanderi",
+        "Bagru",
+        "Handloom",
+        "Bandhej",
+        "Ikat/Pochampally/Patola",
       ],
     },
-  },
-  {
-    Blouses: {
-      sidebar: [
-        {
-          StyleType: ["Straight", "A-line", "Flared", "Anarkali", "Angrakha"],
-        },
-        {
-          Sleeve: [
-            "3/4th sleeve",
-            "3/4th",
-            "Sleeveless",
-            "Short",
-            "Full-length",
-          ],
-        },
-        { Pattern: ["Floral", "Embroidery", "Solid", "Indian", "Geometric"] },
-        { Neckline: ["Round", "Collar", "V", "Boat", "Stylised"] },
-        { Character: ["Others", "Chutki", "Frozen", "Arrow", "AngryBirds"] },
-        {
-          Traditional_Weave: [
-            "Chanderi",
-            "Bagru",
-            "Handloom",
-            "Bandhej",
-            "Ikat/Pochampally/Patola",
-          ],
-        },
-        { Shape: ["Curve", "Maternity", "Petite", "Regular"] },
-        { Fabric: ["Cotton", "Rayon", "Viscose", "Crepe", "Polyester"] },
+    {
+      label: "Shape",
+      value: ["Curve", "Maternity", "Petite", "Regular"],
+    },
+    {
+      label: "Fabric",
+      value: ["Cotton", "Rayon", "Viscose", "Crepe", "Polyester"],
+    },
+  ],
+},
+Sarees: {
+  sidebar: [
+    {
+      label: "StyleType",
+      value: ["Straight", "A-line", "Flared", "Anarkali", "Angrakha"],
+    },
+    {
+      label: "Sleeve",
+      value: [
+        "3/4th sleeve",
+        "3/4th",
+        "Sleeveless",
+        "Short",
+        "Full-length",
       ],
     },
-  },
-  {
-    Leggings: {
-      sidebar: [
-        {
-          StyleType: ["Straight", "A-line", "Flared", "Anarkali", "Angrakha"],
-        },
-        {
-          Sleeve: [
-            "3/4th sleeve",
-            "3/4th",
-            "Sleeveless",
-            "Short",
-            "Full-length",
-          ],
-        },
-        { Pattern: ["Floral", "Embroidery", "Solid", "Indian", "Geometric"] },
-        { Neckline: ["Round", "Collar", "V", "Boat", "Stylised"] },
-        { Character: ["Others", "Chutki", "Frozen", "Arrow", "AngryBirds"] },
-        {
-          Traditional_Weave: [
-            "Chanderi",
-            "Bagru",
-            "Handloom",
-            "Bandhej",
-            "Ikat/Pochampally/Patola",
-          ],
-        },
-        { Shape: ["Curve", "Maternity", "Petite", "Regular"] },
-        { Fabric: ["Cotton", "Rayon", "Viscose", "Crepe", "Polyester"] },
+    {
+      label: "Pattern",
+      value: ["Floral", "Embroidery", "Solid", "Indian", "Geometric"],
+    },
+    {
+      label: "Neckline",
+      value: ["Round", "Collar", "V", "Boat", "Stylised"],
+    },
+    {
+      label: "Character",
+      value: ["Others", "Chutki", "Frozen", "Arrow", "AngryBirds"],
+    },
+    {
+      label: "Traditional_Weave",
+      value: [
+        "Chanderi",
+        "Bagru",
+        "Handloom",
+        "Bandhej",
+        "Ikat/Pochampally/Patola",
       ],
     },
-  },
-  {
-    "Skirts and Ghagras": {
-      sidebar: [
-        {
-          StyleType: ["Straight", "A-line", "Flared", "Anarkali", "Angrakha"],
-        },
-        {
-          Sleeve: [
-            "3/4th sleeve",
-            "3/4th",
-            "Sleeveless",
-            "Short",
-            "Full-length",
-          ],
-        },
-        { Pattern: ["Floral", "Embroidery", "Solid", "Indian", "Geometric"] },
-        { Neckline: ["Round", "Collar", "V", "Boat", "Stylised"] },
-        { Character: ["Others", "Chutki", "Frozen", "Arrow", "AngryBirds"] },
-        {
-          Traditional_Weave: [
-            "Chanderi",
-            "Bagru",
-            "Handloom",
-            "Bandhej",
-            "Ikat/Pochampally/Patola",
-          ],
-        },
-        { Shape: ["Curve", "Maternity", "Petite", "Regular"] },
-        { Fabric: ["Cotton", "Rayon", "Viscose", "Crepe", "Polyester"] },
+    {
+      label: "Shape",
+      value: ["Curve", "Maternity", "Petite", "Regular"],
+    },
+    {
+      label: "Fabric",
+      value: ["Cotton", "Rayon", "Viscose", "Crepe", "Polyester"],
+    },
+  ],
+},
+Dupattas: {
+  sidebar: [
+    {
+      label: "StyleType",
+      value: ["Straight", "A-line", "Flared", "Anarkali", "Angrakha"],
+    },
+    {
+      label: "Sleeve",
+      value: [
+        "3/4th sleeve",
+        "3/4th",
+        "Sleeveless",
+        "Short",
+        "Full-length",
       ],
     },
-  },
-  {
-    "Shawls and Wraps": {
-      sidebar: [
-        {
-          StyleType: ["Straight", "A-line", "Flared", "Anarkali", "Angrakha"],
-        },
-        {
-          Sleeve: [
-            "3/4th sleeve",
-            "3/4th",
-            "Sleeveless",
-            "Short",
-            "Full-length",
-          ],
-        },
-        { Pattern: ["Floral", "Embroidery", "Solid", "Indian", "Geometric"] },
-        { Neckline: ["Round", "Collar", "V", "Boat", "Stylised"] },
-        { Character: ["Others", "Chutki", "Frozen", "Arrow", "AngryBirds"] },
-        {
-          Traditional_Weave: [
-            "Chanderi",
-            "Bagru",
-            "Handloom",
-            "Bandhej",
-            "Ikat/Pochampally/Patola",
-          ],
-        },
-        { Shape: ["Curve", "Maternity", "Petite", "Regular"] },
-        { Fabric: ["Cotton", "Rayon", "Viscose", "Crepe", "Polyester"] },
+    {
+      label: "Pattern",
+      value: ["Floral", "Embroidery", "Solid", "Indian", "Geometric"],
+    },
+    {
+      label: "Neckline",
+      value: ["Round", "Collar", "V", "Boat", "Stylised"],
+    },
+    {
+      label: "Character",
+      value: ["Others", "Chutki", "Frozen", "Arrow", "AngryBirds"],
+    },
+    {
+      label: "Traditional_Weave",
+      value: [
+        "Chanderi",
+        "Bagru",
+        "Handloom",
+        "Bandhej",
+        "Ikat/Pochampally/Patola",
       ],
     },
-  },
-  {
-    "Palazzos and Culottes": {
-      sidebar: [
-        {
-          StyleType364: ["Straight", "A-line", "Flared", "Anarkali", "Angrakha"],
-        },
-        {
-          Sleeve: [
-            "3/4th sleeve",
-            "3/4th",
-            "Sleeveless",
-            "Short",
-            "Full-length",
-          ],
-        },
-        { Pattern: ["Floral", "Embroidery", "Solid", "Indian", "Geometric"] },
-        { Neckline: ["Round", "Collar", "V", "Boat", "Stylised"] },
-        { Character: ["Others", "Chutki", "Frozen", "Arrow", "AngryBirds"] },
-        {
-          Traditional_Weave: [
-            "Chanderi",
-            "Bagru",
-            "Handloom",
-            "Bandhej",
-            "Ikat/Pochampally/Patola",
-          ],
-        },
-        { Shape: ["Curve", "Maternity", "Petite", "Regular"] },
-        { Fabric: ["Cotton", "Rayon", "Viscose", "Crepe", "Polyester"] },
+    {
+      label: "Shape",
+      value: ["Curve", "Maternity", "Petite", "Regular"],
+    },
+    {
+      label: "Fabric",
+      value: ["Cotton", "Rayon", "Viscose", "Crepe", "Polyester"],
+    },
+  ],
+},
+"Kurta Suit Sets": {
+  sidebar: [
+    {
+      label: "StyleType",
+      value: ["Straight", "A-line", "Flared", "Anarkali", "Angrakha"],
+    },
+    {
+      label: "Sleeve",
+      value: [
+        "3/4th sleeve",
+        "3/4th",
+        "Sleeveless",
+        "Short",
+        "Full-length",
       ],
     },
-  },]
+    {
+      label: "Pattern",
+      value: ["Floral", "Embroidery", "Solid", "Indian", "Geometric"],
+    },
+    {
+      label: "Neckline",
+      value: ["Round", "Collar", "V", "Boat", "Stylised"],
+    },
+    {
+      label: "Character",
+      value: ["Others", "Chutki", "Frozen", "Arrow", "AngryBirds"],
+    },
+    {
+      label: "Traditional_Weave",
+      value: [
+        "Chanderi",
+        "Bagru",
+        "Handloom",
+        "Bandhej",
+        "Ikat/Pochampally/Patola",
+      ],
+    },
+    {
+      label: "Shape",
+      value: ["Curve", "Maternity", "Petite", "Regular"],
+    },
+    {
+      label: "Fabric",
+      value: ["Cotton", "Rayon", "Viscose", "Crepe", "Polyester"],
+    },
+  ],
+},
+Blouses: {
+  sidebar: [
+    {
+      label: "StyleType",
+      value: ["Straight", "A-line", "Flared", "Anarkali", "Angrakha"],
+    },
+    {
+      label: "Sleeve",
+      value: [
+        "3/4th sleeve",
+        "3/4th",
+        "Sleeveless",
+        "Short",
+        "Full-length",
+      ],
+    },
+    {
+      label: "Pattern",
+      value: ["Floral", "Embroidery", "Solid", "Indian", "Geometric"],
+    },
+    {
+      label: "Neckline",
+      value: ["Round", "Collar", "V", "Boat", "Stylised"],
+    },
+    {
+      label: "Character",
+      value: ["Others", "Chutki", "Frozen", "Arrow", "AngryBirds"],
+    },
+    {
+      label: "Traditional_Weave",
+      value: [
+        "Chanderi",
+        "Bagru",
+        "Handloom",
+        "Bandhej",
+        "Ikat/Pochampally/Patola",
+      ],
+    },
+    {
+      label: "Shape",
+      value: ["Curve", "Maternity", "Petite", "Regular"],
+    },
+    {
+      label: "Fabric",
+      value: ["Cotton", "Rayon", "Viscose", "Crepe", "Polyester"],
+    },
+  ],
+},
+Leggings: {
+  sidebar: [
+    {
+      label: "StyleType",
+      value: ["Straight", "A-line", "Flared", "Anarkali", "Angrakha"],
+    },
+    {
+      label: "Sleeve",
+      value: [
+        "3/4th sleeve",
+        "3/4th",
+        "Sleeveless",
+        "Short",
+        "Full-length",
+      ],
+    },
+    {
+      label: "Pattern",
+      value: ["Floral", "Embroidery", "Solid", "Indian", "Geometric"],
+    },
+    {
+      label: "Neckline",
+      value: ["Round", "Collar", "V", "Boat", "Stylised"],
+    },
+    {
+      label: "Character",
+      value: ["Others", "Chutki", "Frozen", "Arrow", "AngryBirds"],
+    },
+    {
+      label: "Traditional_Weave",
+      value: [
+        "Chanderi",
+        "Bagru",
+        "Handloom",
+        "Bandhej",
+        "Ikat/Pochampally/Patola",
+      ],
+    },
+    {
+      label: "Shape",
+      value: ["Curve", "Maternity", "Petite", "Regular"],
+    },
+    {
+      label: "Fabric",
+      value: ["Cotton", "Rayon", "Viscose", "Crepe", "Polyester"],
+    },
+  ],
+},
+"Skirts and Ghagras": {
+  sidebar: [
+    {
+      label: "StyleType",
+      value: ["Straight", "A-line", "Flared", "Anarkali", "Angrakha"],
+    },
+    {
+      label: "Sleeve",
+      value: [
+        "3/4th sleeve",
+        "3/4th",
+        "Sleeveless",
+        "Short",
+        "Full-length",
+      ],
+    },
+    {
+      label: "Pattern",
+      value: ["Floral", "Embroidery", "Solid", "Indian", "Geometric"],
+    },
+    {
+      label: "Neckline",
+      value: ["Round", "Collar", "V", "Boat", "Stylised"],
+    },
+    {
+      label: "Character",
+      value: ["Others", "Chutki", "Frozen", "Arrow", "AngryBirds"],
+    },
+    {
+      label: "Traditional_Weave",
+      value: [
+        "Chanderi",
+        "Bagru",
+        "Handloom",
+        "Bandhej",
+        "Ikat/Pochampally/Patola",
+      ],
+    },
+    {
+      label: "Shape",
+      value: ["Curve", "Maternity", "Petite", "Regular"],
+    },
+    {
+      label: "Fabric",
+      value: ["Cotton", "Rayon", "Viscose", "Crepe", "Polyester"],
+    },
+  ],
+},
+"Shawls and Wraps": {
+  sidebar: [
+    {
+      label: "StyleType",
+      value: ["Straight", "A-line", "Flared", "Anarkali", "Angrakha"],
+    },
+    {
+      label: "Sleeve",
+      value: [
+        "3/4th sleeve",
+        "3/4th",
+        "Sleeveless",
+        "Short",
+        "Full-length",
+      ],
+    },
+    {
+      label: "Pattern",
+      value: ["Floral", "Embroidery", "Solid", "Indian", "Geometric"],
+    },
+    {
+      label: "Neckline",
+      value: ["Round", "Collar", "V", "Boat", "Stylised"],
+    },
+    {
+      label: "Character",
+      value: ["Others", "Chutki", "Frozen", "Arrow", "AngryBirds"],
+    },
+    {
+      label: "Traditional_Weave",
+      value: [
+        "Chanderi",
+        "Bagru",
+        "Handloom",
+        "Bandhej",
+        "Ikat/Pochampally/Patola",
+      ],
+    },
+    {
+      label: "Shape",
+      value: ["Curve", "Maternity", "Petite", "Regular"],
+    },
+    {
+      label: "Fabric",
+      value: ["Cotton", "Rayon", "Viscose", "Crepe", "Polyester"],
+    },
+  ],
+},
+"Palazzos and Culottes": {
+  sidebar: [
+    {
+      label: "StyleType",
+      value: ["Straight", "A-line", "Flared", "Anarkali", "Angrakha"],
+    },
+    {
+      label: "Sleeve",
+      value: [
+        "3/4th sleeve",
+        "3/4th",
+        "Sleeveless",
+        "Short",
+        "Full-length",
+      ],
+    },
+    {
+      label: "Pattern",
+      value: ["Floral", "Embroidery", "Solid", "Indian", "Geometric"],
+    },
+    {
+      label: "Neckline",
+      value: ["Round", "Collar", "V", "Boat", "Stylised"],
+    },
+    {
+      label: "Character",
+      value: ["Others", "Chutki", "Frozen", "Arrow", "AngryBirds"],
+    },
+    {
+      label: "Traditional_Weave",
+      value: [
+        "Chanderi",
+        "Bagru",
+        "Handloom",
+        "Bandhej",
+        "Ikat/Pochampally/Patola",
+      ],
+    },
+    {
+      label: "Shape",
+      value: ["Curve", "Maternity", "Petite", "Regular"],
+    },
+    {
+      label: "Fabric",
+      value: ["Cotton", "Rayon", "Viscose", "Crepe", "Polyester"],
+    },
+  ],
+},
+}]

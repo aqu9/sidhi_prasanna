@@ -12,19 +12,16 @@ import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
 
 import { MenuProps, options } from "./utils";
-import { TextField } from "@mui/material";
-import { Label } from "@mui/icons-material";
-const SidebarDetails = ({data}) => {
+const SidebarDetails = ({data, sidebarFunction,imageFilterList}) => {
   const [selected, setSelected] = useState([]);
-  const isAllSelected =
-    options.length > 0 && selected.length === options.length;
-
   const handleChange = (event) => {
     const value = event.target.value;
-    if (value[value.length - 1] === "all") {
-      setSelected(selected.length === options.length ? [] : options);
-      return;
-    }
+    const i = imageFilterList.findIndex(eachItem => eachItem.name === event.target.name);
+
+    if (i > -1) imageFilterList[i] = {name:event.target.name,value:event.target.value}; // (2)
+    else imageFilterList.push({name:event.target.name,value:event.target.value});
+    console.log(imageFilterList)
+    sidebarFunction(imageFilterList)
     setSelected(value);
   };
   return (
@@ -39,18 +36,8 @@ const SidebarDetails = ({data}) => {
           onChange={handleChange}
           renderValue={(selected) => selected.join(", ")}
           MenuProps={MenuProps}
+          name={data.label}
         >
-          <MenuItem value="all">
-            <ListItemIcon>
-              <Checkbox
-                checked={isAllSelected}
-                indeterminate={
-                  selected.length > 0 && selected.length < options.length
-                }
-              />
-            </ListItemIcon>
-            <ListItemText primary="Select All" />
-          </MenuItem>
           {data?.value?.map((option, index) => (
             <MenuItem key={index} value={option}>
               <ListItemIcon key={index}>

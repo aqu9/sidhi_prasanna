@@ -11,7 +11,6 @@ import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
-import { useState } from "react";
 import SidebarDetails from "./side_bar_details";
 
 const drawerWidth = 240;
@@ -81,7 +80,7 @@ const Drawer = styled(MuiDrawer, {
   }),
 }));
 
-const SIDEBAR = ({data}) => {
+const SIDEBAR = ({data,sidebarFunction,imageFilterList}) => {
   const Item = styled(Paper)(({ theme }) => ({
     backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
     ...theme.typography.body2,
@@ -102,7 +101,6 @@ const SIDEBAR = ({data}) => {
   };
 
   
-  console.log(data,data.value)
   return (
     <>
       <Box sx={{ display: "flex" }}>
@@ -140,7 +138,7 @@ const SIDEBAR = ({data}) => {
           </DrawerHeader>
           {
         data.map((eachSidebar,index)=>(
-            <SidebarDetails key={index}  data ={eachSidebar}/>
+            <SidebarDetails key={index}  data ={eachSidebar} sidebarFunction={sidebarFunction} imageFilterList={imageFilterList}/>
         ))
       }
         </Drawer>

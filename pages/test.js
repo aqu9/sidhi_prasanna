@@ -79,7 +79,6 @@ const a = [
 export default function name() {
   const [data, setData] = useState(a);
   const changeInput = (e) => {
-    console.log(e, e.target.value);
     const newData = a.filter((data) =>
       data.item.toLowerCase().includes(e.target.value.toLowerCase())
     );
