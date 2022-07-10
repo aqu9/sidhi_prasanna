@@ -76,7 +76,7 @@ const a = [
   },
 ];
 
-export default function name() {
+export default function Name() {
   const [data, setData] = useState(a);
   const changeInput = (e) => {
     const newData = a.filter((data) =>

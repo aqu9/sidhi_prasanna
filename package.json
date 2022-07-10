@@ -4,11 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build --legacy-peer-deps",
+    "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "deploy": "npm install --legacy-peer-deps && next build",
-    "export": "next build && next export"
+    "lint": "next lint"
   },
   "dependencies": {
     "@emotion/cache": "^11.9.3",
@@ -24,7 +22,6 @@
   },
   "devDependencies": {
     "eslint": "8.18.0",
-    "eslint-config-next": "12.1.6",
-    "@netlify/plugin-nextjs": "4.9.3"
+    "eslint-config-next": "12.1.6"
   }
 }
