@@ -20,13 +20,11 @@ const SidebarDetails = ({data, sidebarFunction,imageFilterList,filtered_element_
     
     if (i > -1) {
       if (event.target.value.length > 0) {
-        console.log(event.target.value.length, "insideif");
         imageFilterList[i] = {
           name: event.target.name,
           value: event.target.value,
         };
       } else {
-        console.log("inside else");
         imageFilterList = imageFilterList.filter(
           (eachItem) => eachItem.name != event.target.name
         );
@@ -36,7 +34,6 @@ const SidebarDetails = ({data, sidebarFunction,imageFilterList,filtered_element_
         name: event.target.name,
         value: event.target.value,
       });
-    console.log(imageFilterList,"imageFilterList")
     sidebarFunction(imageFilterList)
     setSelected(value);
   };

@@ -21,7 +21,7 @@ const Custom_Grid = ({ route, data }) => {
   }
 
   return (
-    <Grid container spacing={{ xs: 2, md: 3}} columns={{ xs: 4, sm: 8, md: 12,lg:16 }} sx={{px:2}}>
+    <Grid container spacing={{ xs: 2, md: 3}} columns={{ xs: 4, sm: 8, md: 12,lg:16 }} sx={{px:2}} >
           {data.map((eachData, index) => (
               <Grid item xs={2} sm={4} md={4} key={index} onClick={() => handleOnClick(eachData)}>
                   <Item
@@ -33,8 +33,9 @@ const Custom_Grid = ({ route, data }) => {
                           transition: 'box-shadow .3s',
                           bordeRadius: '10px',
                           border: '1px solid #ccc',
-                          background: '#fff',
-                          '&:hover': { boxShadow: '0 0 11px rgba(33,33,33,.2)', cursor: 'pointer' },
+                          background: '#faedcd',
+                          color:"#bc6c25",
+                          '&:hover': { boxShadow: '0 20px 25px rgba(33,33,33,.2)', cursor: 'pointer' },
                       }}
                   >
                       <Box>{eachData.item ? <a>{eachData.item}</a> : <a>{eachData}</a>}</Box>
