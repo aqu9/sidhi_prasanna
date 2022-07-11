@@ -4,10 +4,27 @@ import ImageListItem from '@mui/material/ImageListItem';
 import ImageListItemBar from '@mui/material/ImageListItemBar';
 import { Box } from '@mui/material';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import MainBackdrop from './BackDrop';
 
 export default function DressImageList({ imageFilterList, filtered_element_data, set_filtered_element_data, open }) {
+    const [openLoader, setOpenLoader] = React.useState(false);
     let res = [];
+
+
+    // React.useEffect(() => {
+    //     console.log(itemData,"==================================")
+    //     if (imageFilterList.length === 0) {
+    //         setOpenLoader(true);
+    //         console.log('test');
+    //         set_filtered_element_data(itemData);
+    //         setOpenLoader(false);
+    //     }
+    // },[openLoader]);
+    
+    console.log(filtered_element_data,"filtered_element_data==================================")
+
     React.useEffect(() => {
+        setOpenLoader(true);
         imageFilterList.map((element, index) => {
             console.log(element, 'element');
             element.value.map((eachElement) => {
@@ -33,10 +50,12 @@ export default function DressImageList({ imageFilterList, filtered_element_data,
         if (res) {
             set_filtered_element_data(res);
         }
+        setOpenLoader(false);
     }, [imageFilterList]);
     console.log(filtered_element_data, 'outside');
     return (
         <Box>
+            <MainBackdrop openLoader={openLoader}/> 
             <ImageList sx={{ marginLeft: open ? '240px' : '0px', px: 5 }}>
                 {filtered_element_data &&
                     filtered_element_data?.map((item) => (
