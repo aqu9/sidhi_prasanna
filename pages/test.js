@@ -88,8 +88,8 @@ export default function Name() {
   return (
     <Box
       sx={{
-        backgroundImage:
-          "url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQtQ0oxulRXnSHZQq7JlpwH4Lt-blx9Fek4A&usqp=CAU')",
+        backgroundColor:
+          "#F9FAFC",
         height: "100vh",
       }}
     >
