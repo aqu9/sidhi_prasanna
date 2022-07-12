@@ -33,7 +33,7 @@ const Custom_Grid = ({ route, data }) => {
                           transition: 'box-shadow .3s',
                           bordeRadius: '10px',
                           border: '1px solid #ccc',
-                          background: '#faedcd',
+                          background: '#F9FAFC',
                           color:"#bc6c25",
                           '&:hover': { boxShadow: '0 20px 25px rgba(33,33,33,.2)', cursor: 'pointer' },
                       }}
@@ -44,8 +44,7 @@ const Custom_Grid = ({ route, data }) => {
                           src={eachData.imageUrl}
                           width={50}
                           height={50}
-                          style={{ marginLeft: 25 }}
-                          sx={{ border: '1px solid black' }}
+                          sx={{ ml: 5,"&:hover":{width:70} }}
                       />
                   </Item>
               </Grid>

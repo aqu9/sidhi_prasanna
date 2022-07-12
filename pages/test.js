@@ -88,8 +88,7 @@ export default function Name() {
   return (
     <Box
       sx={{
-        backgroundColor:
-          "#F9FAFC",
+        backgroundImage: "linear-gradient(to right, #89f7fe, #66a6ff)",
         height: "100vh",
       }}
     >
