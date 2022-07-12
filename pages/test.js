@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Custom_Grid from "../comps/custom_grid";
+import { Box, TextField, Typography } from "@mui/material";
 
 const a = [
   {
@@ -85,14 +86,33 @@ export default function Name() {
     setData(newData);
   };
   return (
-    <div>
-      <label htmlFor="test">Type Something: </label>
-      <input type="text" id="test" onChange={changeInput} />
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
+    <Box
+      sx={{
+        backgroundImage:
+          "url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQtQ0oxulRXnSHZQq7JlpwH4Lt-blx9Fek4A&usqp=CAU')",
+        height: "100vh",
+      }}
+    >
+      <Box
+        sx={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          p: 2,
+          mb: 5,
+        }}
+      >
+        <TextField
+          type="text"
+          label="Search..."
+          id="test"
+          onChange={changeInput}
+          size="small"
+          InputProps={{style:{color:"#bc6c25"}}}
+          sx={{background:"white"}}
+        />
+      </Box>
       <Custom_Grid route="model" data={data} />
-    </div>
+    </Box>
   );
 }

@@ -79,7 +79,7 @@ const SIDEBAR = ({data,sidebarFunction,imageFilterList,setOpen,open}) => {
               <MenuIcon />
             </IconButton>
             <Typography variant="h6" noWrap component="div">
-              Mini variant drawer
+              SIDHI PRASANNA
             </Typography>
           </Toolbar>
         </AppBar>

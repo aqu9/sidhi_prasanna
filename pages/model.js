@@ -68,7 +68,6 @@ const Model = () => {
         setImageFilterList([...data]);
     };
     useEffect(() => {
-        console.log(imageFilterList.length);
     }, [imageFilterList.length]);
 
     const [open, setOpen] = useState(false);
